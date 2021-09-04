@@ -22,7 +22,6 @@ function App() {
       .then((res) => {
         const newList = res.data.splice(0, 100);
         setList([...newList]);
-        console.log(res.data);
       })
       .catch((error) => {
         console.log(error);
@@ -46,7 +45,7 @@ function App() {
       <Button
         onPressIn={() => console.warn("O botão foi tocado 2 vezes")}
       >
-        Abacate
+        Aperte para testar
       </Button>
     </View>
   );
